@@ -1,6 +1,6 @@
 body {
 	padding-top: 70px;
-	background-image: url("/WebApps/Websites/Mossage/img/oceanhorizon.jpg");
+	background-image: url("../img/oceanhorizon.jpg");
 	background-position: 20% 80%;
 	background-attachment: fixed;
 }
