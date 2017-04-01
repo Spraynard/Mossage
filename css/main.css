@@ -1,0 +1,193 @@
+body {
+	padding-top: 70px;
+	background-image: url("/WebApps/Websites/Mossage/img/oceanhorizon.jpg");
+	background-position: 20% 80%;
+	background-attachment: fixed;
+}
+
+.chosen-font {
+	font-family: 'Baloo Bhaina';
+	color: white;
+}
+
+#white-bg {
+	background: white;
+}
+
+#site-nav {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAXUlEQVQoU32Q0Q3AIAhEyxTsvx1McQ3GMyfa+oPAyyNgAPDMl5n8jujuKzeCBWmjCK0N8AbplBJYREBNHM8aJQvsVuafYAd+jWo/wL6l5gUfW+stdaHtjv3ItFZ8AQBpchQFxd9aAAAAAElFTkSuQmCC) repeat;
+	border-bottom: 2px solid white;
+}
+.navbar-brand {
+	padding: 5px;
+	padding-top: 15px;
+}
+
+#brand-name {
+	font-size: 30px;
+}
+
+.nav-text {
+	padding: 20px 15px 10px 15px;
+	-webkit-transition: background .5s linear;
+	-moz-transition: background .5s linear;
+	-ms-transition: background .5s linear;
+	-o-transition: background .5s linear;
+	transition: background .5s linear;
+}
+
+.nav-text:hover {
+	background: grey;
+	color: white;
+	cursor: pointer;
+}
+
+.navbar-header:hover {
+	cursor: pointer;
+}
+
+.navbar-inner .container {
+	padding-right: 0;
+}
+
+.jumbotron {
+	background: none;
+	min-height: 300px;
+	padding-top: 150px;
+}
+
+.header {
+	font-family: 'Walter Turncoat';
+}
+
+.body-header{
+	font-size: 50px;
+}
+
+.smaller-body-header {
+	font-size: 35px;
+}
+
+#nav-message {
+	font-size: 30px;
+}
+
+.nav-info + .nav-info {
+	margin-left: 5px;
+}
+
+
+/*Attention*/
+#about-area {
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+}
+
+#about-body {
+	font-size: 20px;
+}
+
+.cred-list {
+	list-style: none;
+	padding: 0;
+}
+
+.massage-entry button {
+	background: none;
+	border-radius: 5px;
+	width: 100%;
+	padding: 5px;
+}
+
+.massage-entry:first-child {
+	margin-bottom: 5px;
+}
+
+.massage-entry + .massage-entry {
+	margin-bottom: 5px;
+}
+
+#img-area {
+	padding-bottom: 15px;
+}
+
+#img-area img {
+/*	height: 50%;
+	width: 50%;*/
+	border-radius: 5px;
+}
+
+#history-text {
+	font-size: 20px;
+}
+
+.history-img {
+	border: 2px solid #A85418;
+}
+
+.history-img:first-child {
+	margin-bottom: 5px;
+}
+
+/*Functionality for modal*/
+#overlay {
+	display: none;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: #a9a9a9;
+	background: rgba(169, 169, 169, 0.6);
+	z-index: 1000;
+}
+
+#overlay-div {
+	background: #900c3F;
+	background: rgba(125, 0, 24, 0.9);
+	border: 2px solid #c30428;
+	border-radius: 5px;
+	margin: 0 auto;
+	margin-top: 10%;
+	padding-bottom: 5%;
+}
+
+#exitButton {
+	position: relative;
+	top: 20px;
+	right: 50px;
+	float: right;
+	height: 40px;
+	width: 40px;
+}
+
+#exitButton:hover {
+	cursor: pointer;
+}
+
+#massage-body {
+	padding: 0 15px 0 15px;
+}
+
+#massagePic {
+	clear: both;
+	height: 25%;
+	width: 25%;
+}
+
+#booking-div {
+	margin-top: 10px;
+}
+
+#booking-text {
+	padding-top: 50px;
+	font-size: 30px;
+}
+
+#footer-div {
+	height: 100px;
+	bottom: 0;
+	margin-top: 300px;
+	background: black;
+	background: rgba(220,220,220, 0.6)
+}
