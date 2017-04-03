@@ -5,9 +5,24 @@ body {
 	background-attachment: fixed;
 }
 
+
+/*This area is for text manipulation*/
 .chosen-font {
 	font-family: 'Baloo Bhaina';
 	color: white;
+}
+
+.header-font {
+	font-family: 'Walter Turncoat';
+	color: white;
+}
+
+.body-header{
+	font-size: 50px;
+}
+
+#contact-header {
+	font-size: 30px;
 }
 
 #white-bg {
@@ -54,14 +69,6 @@ body {
 	background: none;
 	min-height: 300px;
 	padding-top: 150px;
-}
-
-.header {
-	font-family: 'Walter Turncoat';
-}
-
-.body-header{
-	font-size: 50px;
 }
 
 .smaller-body-header {
@@ -119,9 +126,12 @@ body {
 
 #history-text {
 	font-size: 20px;
+	padding-left: 30px;
+	padding-top: 30px;
 }
 
 .history-img {
+	margin-top: 30px;
 	border: 2px solid #A85418;
 }
 
@@ -175,13 +185,19 @@ body {
 	width: 25%;
 }
 
-#booking-div {
-	margin-top: 10px;
+#booking-img {
+	margin-top: 30px;
+	margin-left:30px;
 }
 
 #booking-text {
-	padding-top: 50px;
+	padding-top: 30px;
 	font-size: 30px;
+}
+
+#simplybook:hover {
+	stroke: black;
+	stroke-width: .5;
 }
 
 #footer-div {
@@ -189,5 +205,14 @@ body {
 	bottom: 0;
 	margin-top: 300px;
 	background: black;
-	background: rgba(220,220,220, 0.6)
+	background: rgba(220,220,220, 0.3)
+}
+
+#footer-div .contact-area #phone-icon img, #footer-div .contact-area #email-icon img{
+	width: 50px;
+	height: 30px;
+}
+
+#phone-num, #e-mail {
+	margin-left: 20px;
 }
