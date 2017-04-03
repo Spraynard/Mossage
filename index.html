@@ -25,11 +25,11 @@
 			<!-- This will include all of the main actions for user to take on navbar -->
 				<div id="navbar-meat" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav" data-bind="foreach: leftNavItems">
-						<li class="nav-text" data-bind="text: $data, attr: {id: $data.toLowerCase()}, click: $parent.goTo"></li>
+						<li class="nav-text" data-bind="text: $data, attr: {id: $data.toLowerCase()}"></li>
 					</ul>
 			<!-- This will include all the secondary stuff, like booking and contact information -->
 					<ul class="nav navbar-nav navbar-right" data-bind="foreach: rightNavItems">
-						<li class="nav-text" data-bind="text: $data, attr: {id: $data.toLowerCase()}, click: $parent.goTo"></li>
+						<li class="nav-text" data-bind="text: $data, attr: {id: $data.toLowerCase()}"></li>
 					</ul>
 				</div>
 			</div>

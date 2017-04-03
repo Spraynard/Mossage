@@ -59,35 +59,6 @@ $(function () {
 		this.leftNavItems = ["About", "Referrals", "Booking"]
 		this.rightNavItems = ["Contact"]
 
-		this.goTo = function(navItem) {
-			// Bug: was hitting the referrals button on the nav, and saw that this was scrolling
-			// 		the page up. Found out it's because named id'd the referrals area of the website
-			//		as well as the nav button the same. Oh well.
-			var x, y
-			var about = $("#about-body");
-			var referrals = $("#referrals-div");
-			var booking = $("#booking-div");
-			var contact = $("#footer-div");
-			var offset = 100;
-
-			console.log(navItem)
-
-
-			var navItemLoc = {
-				"About" : [about.offset().left, about.offset().top - offset],
-				"Referrals" : [referrals.offset().left, referrals.offset().top - offset],
-				"Contact" : [contact.offset().left, contact.offset().top - offset],
-				"Booking" : [booking.offset().left, booking.offset().top - offset]
-			}
-
-			x = navItemLoc[navItem][0]
-			y = navItemLoc[navItem][1]
-
-			console.log("x equals: " + x + ", y equals: " + y)
-			console.log("Referrals var = " + referrals.offset().top)
-			window.scrollTo(x, y);
-		}
-
 		this.switchCurrentObject = function (object) {
 			self.currentObject(object);
 		}
@@ -107,4 +78,33 @@ $(function () {
 	}
 
 	ko.applyBindings(new viewModel());
+
+// Applies custom click event to the '.nav-texts' and based on the value they get, scrolls to that 
+// 		specific anchor. 
+	var about = $("#about-body");
+	var referrals = $("#referrals-div");
+	var booking = $("#booking-div");
+	var contact = $("#footer-div");
+	var offset = 100;
+
+	$('.nav-text').click(function (object) {
+		console.log(object.currentTarget.id)
+
+		var x, y
+		var navItemLoc = {
+			"about" : [about.offset().left, about.offset().top - offset],
+			"referrals" : [referrals.offset().left, referrals.offset().top - offset],
+			"contact" : [contact.offset().left, contact.offset().top - offset],
+			"booking" : [booking.offset().left, booking.offset().top - offset]
+		}
+
+		x = navItemLoc[object.currentTarget.id][0]
+		y = navItemLoc[object.currentTarget.id][1]
+
+		console.log("From custom click | x = " + x + "y = " + y)
+
+		$('html, body').animate({
+			scrollTop: y
+		}, 2000);
+	})
 })
