@@ -5,7 +5,7 @@
 
 TO-DO's:
 
-* Use the SimplyBook API to show customer reviews on the site.
+* Use the SimplyBook API to show customer reviews on the site. -- Making its way to the chopping block
 
 * Smooth out the scroll when clicking on a navbar element -- Done
 
