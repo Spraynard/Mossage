@@ -99,18 +99,18 @@ body {
 	padding: 0;
 }
 
-.massage-entry button {
+.massage-entry button,.service-entry button {
 	background: none;
 	border-radius: 5px;
 	width: 100%;
 	padding: 5px;
 }
 
-.massage-entry:first-child {
+.massage-entry:first-child,.service-entry:first-child {
 	margin-bottom: 5px;
 }
 
-.massage-entry + .massage-entry {
+.massage-entry + .massage-entry, .service-entry + .service-entry {
 	margin-bottom: 5px;
 }
 
@@ -177,6 +177,7 @@ body {
 
 #massage-body {
 	padding: 0 15px 0 15px;
+	font-size: 20px;
 }
 
 #massagePic {
@@ -195,9 +196,16 @@ body {
 	font-size: 30px;
 }
 
-#simplybook:hover {
-	stroke: black;
-	stroke-width: .5;
+#price-header,#discount-header {
+	font-size: 22px;
+}
+
+#pricing {
+	font-size: 20px;
+}
+
+.discount {
+	font-size: 16px;
 }
 
 #footer-div {
