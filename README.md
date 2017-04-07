@@ -22,3 +22,7 @@ TO-DO's:
 * Dropdown at header
 
 * Styling for smaller screen sizes.
+	
+	- Overlay Styling
+
+	- General Website Styling (Text and Images and such).
