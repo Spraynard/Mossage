@@ -84,8 +84,7 @@ $(function () {
 
 		this.currentObject = ko.observable(this.massages()[0])
 
-		this.leftNavItems = ["About", "Referrals", "Booking"]
-		this.rightNavItems = ["Contact"]
+		this.leftNavItems = ["About", "Booking", "Contact"]
 
 		this.switchCurrentObject = function (object) {
 			self.currentObject(object);
@@ -115,14 +114,13 @@ $(function () {
 	var contact = $("#footer-div");
 	var offset = 100;
 
-	$('.nav-text').click(function (object) {
+	$('.nav-text, #brand-name').click(function (object) {
 		console.log(object.currentTarget.id)
 
 		var x, y
 		var navItemLoc = {
 			"brand-name": [0,0],
 			"about" : [about.offset().left, about.offset().top - offset],
-			"referrals" : [referrals.offset().left, referrals.offset().top - offset],
 			"contact" : [contact.offset().left, contact.offset().top - offset],
 			"booking" : [booking.offset().left, booking.offset().top - offset]
 		}
@@ -131,6 +129,8 @@ $(function () {
 		y = navItemLoc[object.currentTarget.id][1]
 
 		console.log("From custom click | x = " + x + "y = " + y)
+		
+		$('#navbar-meat').collapse('hide');
 
 		$('html, body').animate({
 			scrollTop: y

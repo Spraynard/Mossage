@@ -15,23 +15,21 @@
 </head>
 <body>
 	<nav id="site-nav" class="navbar navbar-default navbar-fixed-top navbar-toggleable-xs">
-	<!-- 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-meat" aria-controls="navbar-meat" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button> -->
-		<div class="navbar-inner">
-			<div class="container">
-			<!-- Navbar Header -->
-			<div class="navbar-header"><span id="brand-name" class="nav-text navbar-brand header-font">Mossage Health</span></div>
-			<!-- This will include all of the main actions for user to take on navbar -->
-				<div id="navbar-meat" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav" data-bind="foreach: leftNavItems">
-						<li class="nav-text" data-bind="text: $data, attr: {id: $data.toLowerCase()}"></li>
-					</ul>
-			<!-- This will include all the secondary stuff, like booking and contact information -->
-					<ul class="nav navbar-nav navbar-right" data-bind="foreach: rightNavItems">
-						<li class="nav-text" data-bind="text: $data, attr: {id: $data.toLowerCase()}"></li>
-					</ul>
-				</div>
+		<!-- Put a dropdown here that only shows up in the case of the screen being too small. -->
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-meat">
+					<!-- <span class="glyphicon glyphicon-menu-hamburger"></span> -->
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div id="brand-name" class="navbar-brand header-font">Mossage Health</div>
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-meat">
+				<ul class="nav navbar-nav" data-bind="foreach: leftNavItems">
+					<li class="nav-text" data-bind="text: $data, attr: {'id': $data.toLowerCase()}"></li>
+				</ul>
 			</div>
 		</div>
 	</nav>
@@ -89,13 +87,13 @@
 						</div>
 					</div>
 				</div>
-			<div class="row">
+<!-- 			<div class="row">
 				<div id="referrals-div" class="col-lg-12">
 					<div class="body-header header-font col-lg-12 col-xs-12"><u>Referrals/Reviews</u></div>
 					<div id="simply-reviews" class=" text-center chosen-font">Insert All Simply Book Reviews Into This area. If a review doesn't have a blurb, don't include it in the list!
 					</div>
-				</div>
-			</div>
+				</div>a
+			</div> -->
 			<div class="row">
 				<div id="booking-div" class="chosen-font col-lg-12 col-xs-12">
 					<div id="booking-header" class="body-header header-font col-lg-12 col-xs-12"><u>Booking</u></div>
@@ -103,7 +101,7 @@
 						<a href="http://mossage1.simplybook.me"><img id="simplybook" class="img-responsive center-block" src="img/simplybookicon.svg"></a>
 					</div>
 					<div id="booking-text" class="col-lg-7 col-md-5 col-xs-12 chosen-font">
-						I use SimplyBook.me to book all of my appointments! Please click on the icon to be taken to my SimplyBook.me booking site.
+						I use SimplyBook.me to book all of my appointments! Please click on the icon to be taken to my SimplyBook.me booking site. While there, be sure to check out my reviews, and add one if you want!
 						<div id="price-header" class="body-header header-font"><u>Prices</u></div>
 						<div id="pricing">Insert Pricing Here</div>
 						<div id="discount-header" class="body-header header-font"><u>Discounts</u></div>
@@ -149,6 +147,7 @@
 		</div>
 	</div>
 	<script src="js/lib/jquery-3.1.1.js"></script>
+	<script src="js/lib/bootstrap.min.js"></script>
 	<script src="js/lib/knockout-3.4.2.js"></script>
 	<script src="js/main.js"></script>
 </body>
