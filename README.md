@@ -5,11 +5,11 @@
 
 TO-DO's:
 
-* <strike>Use the SimplyBook API to show customer reviews on the site.</strike> -- Chopped
+* <strike>Use the SimplyBook API to show customer reviews on the site.</strike>
 
-* Smooth out the scroll when clicking on a navbar element -- Done
+* <strike>Smooth out the scroll when clicking on a navbar element</strike>
 
-* Get contact bar on bottom of site filled out. -- Done
+* <strike>Get contact bar on bottom of site filled out.</strike>
 
 * Acquire pictures for site
 
