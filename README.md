@@ -16,3 +16,9 @@ TO-DO's:
 * Include a lotus flower.... Make it a quick ole .svg
 
 * Write content in text areas.
+
+-------------Small Screen Size TO-DO's-------------
+
+* Dropdown at header
+
+* Styling for smaller screen sizes.
