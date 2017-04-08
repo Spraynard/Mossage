@@ -19,7 +19,7 @@ TO-DO's:
 
 -------------Small Screen Size TO-DO's-------------
 
-* Dropdown at header
+* <strike>Dropdown at header</strike>
 
 * Styling for smaller screen sizes.
 	
