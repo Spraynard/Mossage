@@ -150,13 +150,15 @@ body {
 #overlay {
 	display: none;
 	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow-y: scroll;
 	background: #a9a9a9;
 	background: rgba(169, 169, 169, 0.6);
 	z-index: 1000;
+
 }
 
 #overlay-div {
@@ -195,7 +197,10 @@ body {
 
 #booking-img {
 	margin-top: 30px;
-	margin-left:30px;
+}
+
+#booking-img div {
+	margin: 0 auto;
 }
 
 #booking-text {
@@ -232,10 +237,38 @@ body {
 	margin-left: 20px;
 }
 
+.noscroll {
+	overflow: hidden;
+}
 /*Smaller Screen Size Area*/
 
 @media (max-width: 768px) {
-	body {
-		background: red;
+	.massage-entry button, .service-entry button {
+		width : 75%;
+	}
+
+	.body-header {
+		text-align: center;
+	}
+
+	#history-text {
+		padding-left: 15px;
+		text-align: center;
+	}
+
+	#booking-text {
+		text-align: center;
+	}
+
+	#about-body {
+		text-align: center;
+	}
+
+	#email-col {
+		padding-top: 15px;
+	}
+
+	#footer-div {
+		height: 130px;
 	}
 }

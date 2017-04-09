@@ -84,7 +84,7 @@ $(function () {
 
 		this.currentObject = ko.observable(this.massages()[0])
 
-		this.leftNavItems = ["About", "Booking", "Contact"]
+		this.leftNavItems = ["About", "Services", "Booking", "Contact"]
 
 		this.switchCurrentObject = function (object) {
 			self.currentObject(object);
@@ -93,11 +93,14 @@ $(function () {
 		this.toggleMassagePage = function() {
 			console.log("Hello?");
 			var overlay = $("#overlay");
+			var body = $("body")
 			if (overlay.css('display') == 'none') {
 				overlay.show('slow')
+				body.toggleClass("noscroll")
 			}
 			else {
 				overlay.hide('fast');
+				body.toggleClass("noscroll")
 			}
 		}
 
@@ -109,7 +112,7 @@ $(function () {
 // Applies custom click event to the '.nav-texts' and based on the value they get, scrolls to that 
 // 		specific anchor.
 	var about = $("#about-body");
-	var referrals = $("#referrals-div");
+	var services = $("#services-div");
 	var booking = $("#booking-div");
 	var contact = $("#footer-div");
 	var offset = 100;
@@ -121,6 +124,7 @@ $(function () {
 		var navItemLoc = {
 			"brand-name": [0,0],
 			"about" : [about.offset().left, about.offset().top - offset],
+			"services" : [services.offset().left, services.offset().top - offset],
 			"contact" : [contact.offset().left, contact.offset().top - offset],
 			"booking" : [booking.offset().left, booking.offset().top - offset]
 		}
