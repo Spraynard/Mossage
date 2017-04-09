@@ -239,6 +239,7 @@ body {
 
 .noscroll {
 	overflow: hidden;
+	position: fixed;
 }
 /*Smaller Screen Size Area*/
 
