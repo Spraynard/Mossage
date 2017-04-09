@@ -246,7 +246,7 @@ body {
 @media (max-width: 768px) {
 	body {
 		background-attachment: scroll;
-		background-size: auto 100%;
+		background-size: cover;
 	}
 
 	.massage-entry button, .service-entry button {
