@@ -3,7 +3,7 @@ $(function () {
 			name : "Sports Massage",
 			description : "My sports massages are things of fantasy! You've heard about them, but now you can experience first hand the awe-inspiring power of a professional sports massage!\
 							I specifically target the most stressed areas of the body to increase blood flow, release lactic acid, and ultimately help make your muscles heal to be stronger than they ever were before!\
-							All kinds of atheletes, from the olympic professional, to the weekend gym-rat can get the amazing benefits of my sports massage.",
+							All kinds of atheletes, from the olympic professional, to the weekend gym-rat, can get the amazing benefits of my sports massage.",
 			images : ['sports.jpeg'],
 			links : [{name: 'Benefits of Massage For Atheletes - Kerrie Ann Frey', url: 'http://www.healthfitnessmag.com/Health-Fitness-Magazine/February-2013/Benefits-Of-Massage-For-Athletes/'},
 					{name: 'The Role of Massage in Sports Performance and Rehabilitation: Current Evidence and Future Direction - Jason Brummitt', url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2953308/'}]

@@ -101,6 +101,10 @@ body {
 	font-size: 20px;
 }
 
+#profile-pic {
+	border: 2px solid #A85418;
+}
+
 .cred-list {
 	list-style: none;
 	padding: 0;
@@ -191,6 +195,7 @@ body {
 
 #massagePic {
 	clear: both;
+	margin-top: 10%;
 	height: 25%;
 	width: 25%;
 }
@@ -251,7 +256,7 @@ body {
 
     .container {
         max-width: 100%;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
 	.massage-entry button, .service-entry button {
@@ -269,9 +274,47 @@ body {
 
 	#booking-text {
 		text-align: center;
+		font-size: 20px;
 	}
 
 	#about-body {
+		text-align: center;
+	}
+
+	#email-col {
+		padding-top: 15px;
+	}
+
+	#footer-div {
+		height: 130px;
+	}
+
+	.massagePic {
+		height: 50%;
+		width: 50%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+	img:not(#simplybook) {
+		height: 75%;
+		width: 75%;
+	}
+
+	#history-pics img {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#history-text, #history-header {
+		text-align: center;
+	}
+
+	.massage-entry button, .service-entry button {
+		width: 75%;
+	}
+
+	#booking-header, #booking-text {
 		text-align: center;
 	}
 
