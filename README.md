@@ -21,8 +21,8 @@ TO-DO's:
 
 * <strike>Dropdown at header</strike>
 
-* Styling for smaller screen sizes.
+* <strike>Styling for smaller screen sizes.
 	
 	- Overlay Styling
 
-	- General Website Styling (Text and Images and such).
+	- General Website Styling (Text and Images and such).</strike>
