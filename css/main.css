@@ -135,6 +135,10 @@ body {
 	border-radius: 5px;
 }
 
+#lotus-flower {
+	padding-top: 20px;
+}
+
 #history-text {
 	font-size: 20px;
 	padding-left: 30px;
@@ -172,16 +176,19 @@ body {
 	border-radius: 5px;
 	margin: 0 auto;
 	margin-top: 10%;
+	margin-bottom: 20%;
 	padding-bottom: 5%;
 }
 
+#overlay-div img {
+	max-height: 20em
+}
+
 #exitButton {
-	position: relative;
-	top: 20px;
-	right: 50px;
 	float: right;
-	height: 40px;
-	width: 40px;
+	height: 4em;
+	margin-top: 2%;
+	margin-right: 2%;
 }
 
 #exitButton:hover {
@@ -193,11 +200,8 @@ body {
 	font-size: 20px;
 }
 
-#massagePic {
-	clear: both;
-	margin-top: 10%;
-	height: 25%;
-	width: 25%;
+.massagePic {
+	margin-top: 3%;
 }
 
 #booking-img {
@@ -254,6 +258,18 @@ body {
 		overflow-x: hidden;
 	}
 
+	#lotus-flower {
+		height: 200px;
+		width: 200px;
+	}
+
+	#profile-pic, .history-img {
+		height: 75%;
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
     .container {
         max-width: 100%;
         overflow: hidden;
@@ -289,16 +305,22 @@ body {
 		height: 130px;
 	}
 
-	.massagePic {
-		height: 50%;
-		width: 50%;
+	#overlay-div {
+		margin-top: 20%;
 	}
+
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
-	img:not(#simplybook) {
-		height: 75%;
-		width: 75%;
+
+	#profile-pic, .history-img {
+		height: 60%;
+		width: 60%;
+	}
+
+	#lotus-flower {
+		height: 200px;
+		width: 200px;
 	}
 
 	#history-pics img {
