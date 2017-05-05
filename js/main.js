@@ -32,7 +32,7 @@ $(function () {
 			name : "Trigger Point Therapy",
 			description : "Trigger point therapy is one of the most basic and essential parts of professional massage. \
 				Have you ever heard anyone use the term 'knot' before, when they're talking about their body? Well that's what \
-				a trigger point is, a knot! Trigger point therapy is the process of helping your body release all of that 'bunched up' tension \
+				a trigger point is, a 'knot'! Trigger point therapy is the process of helping your body release all of that 'bunched up' tension \
 				and let me be the first to tell you that a professional session with me will make you think twice about ever getting your \
 				triger points worked on by anybody else.",
 			images : [{image: "trigger_point_therapy.jpg", tags: "Kalamazoo Massage trigger point therapy"}],
@@ -77,7 +77,8 @@ $(function () {
 				is by offering them massages at the workplace! I bring my personal massage chair to every in-office massage, \
 				so you can rest easy knowing that your employees are being given the best possible care. If you feel like you want \
 				to set up massages for your employees (and yourself, of course), please give me a call or an e-mail!",
-			images: [{image: "office_massage.jpg", tags: "Kalamazoo Massage Office Massage"}],
+			images: [{image: "office_massage.jpg", tags: "Kalamazoo Massage Office Massage"},
+					{image: "chair_mossage.jpg", tags: "Homemade flyer for chair Massages!"}],
 			links: []
 		},
 		{
@@ -89,14 +90,7 @@ $(function () {
 			images: [{image: "event_massages.jpg", tags: "Kalamazoo Massage Event Massage"}],
 			links: []
 		}]
-
-	function tagger(tagArray) {
-		var string = "";
-		tagArray.forEach(function(tag) {
-			string += tag + " ";
-		})
-		return string
-	}	
+		
 	var Massage = function (data) {
 		this.name = ko.observable(data.name);
 		this.description = ko.observable(data.description);

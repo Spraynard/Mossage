@@ -249,6 +249,10 @@ body {
 .noscroll {
 	overflow: hidden;
 }
+
+#e-mail, #phone-num {
+	font-size: 25px;
+}
 /*Smaller Screen Size Area*/
 
 @media (max-width: 768px) {
