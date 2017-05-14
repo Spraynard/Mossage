@@ -5,27 +5,21 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Mossage Health --- Licensed massage therapist specializing in sports, children's, deep tissue, trigger point, lymphatic drainage, pregnancy, and pre/post-operation massage. Happily based in Kalamazoo, MI.">
-
-	<title>Mossage Health - Kalamazoo, MI based Massage Therapy</title>
-
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Walter+Turncoat">
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Baloo+Bhaina">
-	<link rel="stylesheet" href="css/lib/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.css">
+	<title>Mossage Health - Kalamazoo/Portage, MI based Massage Therapy</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Walter+Turncoat|Josefin+Sans">
 </head>
 <body>
-
 	<nav id="site-nav" class="navbar navbar-default navbar-fixed-top navbar-toggleable-xs">
-		<!-- Put a dropdown here that only shows up in the case of the screen being too small. -->
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-meat">
-					<!-- <span class="glyphicon glyphicon-menu-hamburger"></span> -->
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<div id="brand-name" class="navbar-brand header-font">Mossage Health</div>
+				<div id="brand-name" class="navbar-brand header-font">Mossage Health
+				<div id="brand-subtext" class="chosen-font">Kalamazoo/Portage, MI based massage therapy
+				</div></div>
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-meat">
 				<ul class="nav navbar-nav" data-bind="foreach: leftNavItems">
@@ -45,18 +39,18 @@
 			<div id="about-area" class="col-lg-12">
 				<div class="row">
 					<div id="img-area" class="col-lg-5 col-xs-12">
-						<img src="img/mossage_room.JPG" class="img-responsive center-block" id="profile-pic" alt="Massage Room">
+						<img src="img/mossage_room.jpg" class="img-responsive center-block" id="profile-pic" alt="Massage Room">
 						<img src="img/lotusflower.svg" class="img-responsive center-block" id="lotus-flower" alt="Mossage Health Lotus Flower">
 					</div>
 
 					<div id="about-body" class="chosen-font text-left col-lg-7 col-xs-12">
-						Hello, my name is Mo Moore! I am a licensed and certified massage therapist located in the Kalamazoo, MI area. I've been practicing and perfecting my art for more than 10 years, <u>and it shows</u>!
+						Hello, my name is Mo Moore! I am a licensed and ABMP insured massage therapist located in the Kalamazoo, MI area. I've been practicing and perfecting my art for more than 10 years, <u>and I still love it</u>!
 						<br><br>
-						The people that come to me show up when they have a minor backache, medium muscle pain, or even during their most troubling times! I make sure to help them ease back into their normal pain-free lifestyle in the fastest amount of time their bodies will allow!
+						The people that come to me show up when they have a minor backache, medium muscle pain, or even during their most troubling times! I make sure to help them ease back into their normal pain-free lifestyle in the quickest amount of time their bodies will allow!
 						<br><br>
-						All of my in-office massages include relaxing aromatherapy as well to help ease your mind off of the day.
+						All of my in-office massages include relaxing aromatherapy as well to help ease your mind off of the day, and renew your body.
 						<br><br>
-						Below you will see some of the many services I provide. Be sure to click on a service to learn more about it! I also provide massages for the disabled as well! I am a massage therapist for everyone!
+						Below you can see the services I provide.<br><u>Be sure to click on a service to learn more about it!</u>
 						<div id="services-div" class="row">
 							<div class="chosen-font col-lg-4 col-xs-12 text-center">
 								<h3 class="header-font"><u>I Specialize In:</u></h3>
@@ -75,6 +69,8 @@
 								<ul class="cred-list">
 									<li>LMT</li>
 									<li>ABMP Insured</li>
+									<li class="service-entry" data-bind="with: codeOfConduct"><button data-bind="text: name, click: function(obj) {
+									$parent.switchCurrentObject(obj); $parent.toggleMassagePage()}"></button></li>
 								</ul>
 							</div>
 						</div>
@@ -88,34 +84,27 @@
 							Got Stress?<br>
 							Let me get you <u>Moore Relaxed</u> in dealing with life's most difficult endeavors. Allow yourself the time in these stress filled days to take care of yourself, treat yourself, and relax. My knowledge of muscles and superb massaging techniques will help your body maintain wellness so you can enjoy life!
 							<br><br>
-							All of Mossage Health's business is conducted in the most nurturing, ethical, compassionate, and responsible manner!
+							All of my business at Mossage Health is conducted in the most nurturing, ethical, compassionate, and responsible manner!
 							<br><br>
-							I started my practice in 2007 at beautiful southern California! For those ten years since then, I have only worked for chiropractors and physical therapists.
+							I started my practice in 2007 in beautiful southern California! For those ten years since then, I have only worked for chiropractors and physical therapists. Until now!
 							<br><br>
-							While working with these professionals, I was able to learn really cool stuff, like laser therapy, and ultrasound electric stem. I also gained tons of experience with pre, and post, operative clients.
+							While working with these professionals, I was able to learn many different modalities, like laser therapy and ultrasound. I also gained tons of experience with pre, and post operative clients.
 							<br><br>
-							A good amount of the chiropractors I worked with also had an abundance of prefessional athletes: cyclists, skaters, BMX bikers, a California state champion bodybuilder, and I was even able to work on two Olympic gold medalist gymnasts at the time!
+							The chiropractors I worked with had an abundance of professional athletes: cyclists, skaters, BMX bikers, a California state champion bodybuilder, and I was even able to work on two Olympic gold medalist gymnasts at the time!
 							<br><br>
-							I like being on the front lines of physical activities, where people really need me. On my off days, I helped runners and road-bike racers with their pre-race warmup stretches, and cool-down massages (to reduce all that lactic acid buildup. They really appreciated it, and so did the people I worked for (since I brought them more business)!
+							I like being on the front lines of physical activities, where people really need me. On my off days, I helped runners and road-bike racers with their pre-race warmup stretches, and cool-down massages (to reduce all that lactic acid buildup). They really appreciated it, and so did the people I worked for!
 							<br><br>
 							Moving to michigan has provided me with a great opportunity to show a new set of people the skills that I have gained, and how well I can use them!
 							It really makes my day when I can help anyone start the process of living a pain free or reduced pain lifestyle! 
 						</div>
 						<div id="history-pics" class="col-lg-4 col-xs-12">
-							<img src="img/cert.JPG" class="img-responsive history-img" alt="Michigan State Certification">
-							<img src="img/mossage_license_plate.JPG" class="img-responsive history-img" alt="California License Plate">
+							<img src="img/cert.jpg" class="img-responsive history-img" alt="Michigan State Certification">
+							<img src="img/mossage_license_plate.jpg" class="img-responsive history-img" alt="California License Plate">
 							<img src="img/bike_race.jpg" class="img-responsive history-img" alt="I used to help road bike racers with their muscle pain woes">
 							<img src="img/marathon_runners.jpg" class="img-responsive history-img" alt="I also helped marathon runners with their muscle pain woes">
 						</div>
 					</div>
 				</div>
-<!-- 			<div class="row">
-				<div id="referrals-div" class="col-lg-12">
-					<div class="body-header header-font col-lg-12 col-xs-12"><u>Referrals/Reviews</u></div>
-					<div id="simply-reviews" class=" text-center chosen-font">Insert All Simply Book Reviews Into This area. If a review doesn't have a blurb, don't include it in the list!
-					</div>
-				</div>a
-			</div> -->
 			<div class="row">
 				<div id="booking-div" class="chosen-font col-lg-12 col-xs-12">
 					<div id="booking-header" class="body-header header-font col-lg-12 col-xs-12"><u>Booking</u></div>
@@ -129,7 +118,7 @@
 						<div id="price-header" class="body-header header-font"><u>Prices</u></div>
 						<div id="pricing">$60/Hour | $30/Half-Hour</div>
 						<div id="discount-header" class="body-header header-font"><u>Discounts</u></div>
-						<div class="discount">$10 off massage if you refer a hour massage / $5 off if you refer a 30 min massage</div>
+						<div class="discount">$10 off massage if you refer a hour massage / $5 off if you refer a 30 min massage</div><br>
 						<div class="discount">5 Free Minutes Added, or $5.00 off if you give me a shout out on Facebook and link this site!</div>
 					</div>
 				</div>
@@ -156,36 +145,45 @@
 			<div class="row">
 				<img id="exitButton" src="img/exitButton.svg" data-bind="click: $parent.toggleMassagePage">
 			</div>
+			<!-- ko if: images() !== undefined -->
 				<div class="row">
-					<!-- ko if: images().length === 1 -->
-						<!-- ko foreach: images -->
-						<div class="col-xs-12 massagePic">
-							<img class="center-block img-responsive" data-bind="attr: {src : 'img/' + $data.image, alt: $data.tags}">
-						</div>
-						<!-- /ko -->
+				<!-- ko if: images().length === 1 -->
+					<!-- ko foreach: images -->
+					<div class="col-xs-12 massagePic">
+						<img class="center-block img-responsive" data-bind="attr: {src : 'img/' + $data.image, alt: $data.tags}">
+					</div>
 					<!-- /ko -->
-					<!-- ko if: images().length > 1 -->
-						<!-- ko foreach: images -->
-						<div class="col-xs-6 massagePic">
-							<img class="center-block img-responsive" data-bind="attr: {src : 'img/' + $data.image}">
-						</div>
-						<!-- /ko -->
+				<!-- /ko -->
+				<!-- ko if: images().length > 1 -->
+					<!-- ko foreach: images -->
+					<div class="col-xs-6 massagePic">
+						<img class="center-block img-responsive" data-bind="attr: {src : 'img/' + $data.image}">
+					</div>
 					<!-- /ko -->
+				<!-- /ko -->
 				</div>
 				<u style="color: white;"><h3 class="text-center header-font" data-bind="text: name"></h3></u>
-				<div id="massage-body" class="chosen-font text-center" data-bind="text: description"></div>
-					<!-- ko if: links().length !== 0 -->
-					<div class="text-center chosen-font" style="padding-top: 10px;"><h4><u>Check out these links for more information:</u></h4></div>
-					<!-- /ko -->
-					<!-- ko foreach: links -->
-					<div class="text-center"><a data-bind="text: name, attr: {href: url}"></a></div>
-					<br>
-					<!-- /ko -->
+				<div id="massage-body" class="chosen-font text-center" data-bind="html: description"></div>
+				<!-- ko if: links().length !== 0 -->
+				<div class="text-center chosen-font" style="padding-top: 10px;"><h4><u>Check out these links for more information:</u></h4></div>
+				<!-- /ko -->
+				<!-- ko foreach: links -->
+				<div class="text-center"><a data-bind="text: name, attr: {href: url}"></a></div>
+				<br>
+				<!-- /ko -->
+			<!-- /ko -->
+			<!-- ko if: images() === undefined -->
+			<div class="row">
+				<embed style="margin-top: 5%" height="500px" width="90%" class="center-block" data-bind="attr: {src:'img/' + $data.embed()}"></embed>
+			</div>
+			<!-- /ko -->
 		</div>
 	</div>
-	<script src="js/lib/jquery-3.1.1.js"></script>
-	<script src="js/lib/bootstrap.min.js"></script>
-	<script src="js/lib/knockout-3.4.2.js"></script>
-	<script src="js/main.js"></script>
+		<script src="js/lib/jquery-3.2.1.min.js" type="application/javascript"> </script>
+		<script src="js/lib/knockout-3.4.2.js" type="application/javascript"></script>
+		<link rel="stylesheet" href="css/lib/bootstrap.min.css" type="text/css">
+		<script src="js/lib/bootstrap.min.js" type="application/javascript"></script>
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		<script src="js/main.js" type="application/javascript"></script>
 </body>
 </html>
